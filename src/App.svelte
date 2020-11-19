@@ -30,7 +30,7 @@
     return n.toLocaleString(undefined, { maximumFractionDigits: 1 });
   }
 
-  $: rm = formatted(formulas.get(form.formula)(form.w, form.r));
+  $: rm = formulas.get(form.formula)(form.w, form.r);
 </script>
 
 <style>
